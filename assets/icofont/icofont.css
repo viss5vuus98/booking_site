@@ -43,6 +43,61 @@ url("./fonts/icofont.woff") format("woff");
   content: "\13d0b";
 }
 
+.icofont-file-alt:before
+{
+  content: "\eb08";
+}
+
+.icofont-arrow-left:before
+{
+  content: "\ea5c";
+}
+
+.icofont-arrow-right:before
+{
+  content: "\ea5d";
+}
+
+.icofont-verification-check:before
+{
+  content: "\f021";
+}
+
+.icofont-ui-user:before
+{
+  content: "\ec8e";
+}
+
+.icofont-facebook:before
+{
+  content: "\ed37";
+}
+
+.icofont-search-1:before
+{
+  content: "\ed11";
+}
+
+.icofont-phone:before
+{
+  content: "\efbb";
+}
+
+.icofont-check-circled:before
+{
+  content: "\eed7";
+}
+
+.icofont-ui-email:before
+{
+  content: "\ec56";
+}
+
+.icofont-double-right:before
+{
+  content: "\ea7c";
+}
+
 [class^="icofont-"].icofont-duotone,
 	[class*=" icofont-"].icofont-duotone
 {

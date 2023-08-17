@@ -1,0 +1,39 @@
+.img_block {
+  background-image: url('../../images/event/online.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat:  no-repeat;
+}
+
+.marquee_content {
+  max-height: 94px;
+  overflow-y: hidden;
+}
+
+.img_content_sm {
+  overflow: hidden;
+  height: 267px;
+  @include b768 {
+    height: 274px;
+  }
+}
+
+.heading_4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.albums_tag {
+  position: absolute;
+  top: -20px;
+  left: 35%;
+  transform: translate(-50%);
+  transform: rotate(-4deg);
+}
+
+.rotate-e-2 {
+  transform: rotate(2deg);
+}
+.rotate-s-2 {
+  transform: rotate(-2deg);
+}

@@ -290,10 +290,11 @@ $primary: #030303 !default;
 $secondary: #fbff22 !default;
 $success: $green !default;
 $info: $cyan !default;
-$warning: $yellow !default;
+$warning: #fbff22 !default;
 $danger: #c96464 !default;
 $light: #F3F1E5 !default;
-$dark: $gray-900 !default;
+$dark: #030303 !default;
+$light-white: #fff;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -305,7 +306,9 @@ $theme-colors: (
   "warning": $warning,
   "danger": $danger,
   "light": $light,
-  "dark": $dark) !default;
+  "dark": $dark,
+  "light-white": $light-white
+   ) !default;
 // scss-docs-end theme-colors-map
 
 // scss-docs-start theme-text-variables
@@ -405,6 +408,7 @@ $spacers: (
   6: $spacer * 1.5,
   7: $spacer * 1.75,
   8: $spacer * 2,
+  9: $spacer * 3,
   ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -590,10 +594,10 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: system-ui,
-  -apple-system,
-  "Yeseva One",
+$font-family-sans-serif: "Yeseva One", 
   "Noto Serif TC",
+  system-ui,
+  -apple-system,
   Roboto,
   "Helvetica Neue",
   "Noto Sans",
@@ -604,7 +608,9 @@ $font-family-sans-serif: system-ui,
   "Segoe UI Emoji",
   "Segoe UI Symbol",
   "Noto Color Emoji" !default;
-$font-family-monospace: SFMono-Regular,
+$font-family-monospace: "Yeseva One",
+  "Noto Serif TC",
+  SFMono-Regular,
   Menlo,
   Monaco,
   Consolas,
@@ -646,12 +652,17 @@ $h6-font-size: $font-size-base * .75 !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size) !default;
+  1: $h1-font-size, //64px
+  2: $h2-font-size, //48px
+  3: 32px,
+  4: $h3-font-size, //24px
+  5: $h4-font-size, //20px
+  6: $h5-font-size, //16px
+  7: 14px,
+  8: $h6-font-size, //12px
+  9: 10px,
+  10: 8px
+  ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
@@ -1165,7 +1176,7 @@ $zindex-levels: (
 // scss-docs-start nav-variables
 $nav-link-padding-y: .5rem !default;
 $nav-link-padding-x: 1rem !default;
-$nav-link-font-size: null !default;
+$nav-link-font-size: 18px !default;
 $nav-link-font-weight: null !default;
 $nav-link-color: var(--#{$prefix}link-color) !default;
 $nav-link-hover-color: var(--#{$prefix}link-hover-color) !default;

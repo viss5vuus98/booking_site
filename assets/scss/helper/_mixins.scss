@@ -1,0 +1,6 @@
+//grid
+@mixin b768 {
+  @media screen and (min-width: 767px) {
+    @content;
+  }
+}
