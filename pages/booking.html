@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/icofont/icofont.min.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <%- include('./layout/navbar.ejs'); -%>
+    <!-- step control -->
+    <div class="container mt-6 mt-md-10">
+      <div class="row">
+        <div class="col-md-6 m-auto">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="py-3 border border-1 text-center">
+                1
+              </p>
+              <p>訂單確認</p>
+            </div>
+            <div>
+              <p class="py-1 py-md-3 border border-1 text-center">
+                2
+              </p>
+              <p>訂單確認</p>
+            </div>
+            <div>
+              <p class="py-1 py-md-3 border border-1 text-center">
+                3
+              </p>
+              <p>訂單確認</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <%- include('./layout/footer.ejs'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

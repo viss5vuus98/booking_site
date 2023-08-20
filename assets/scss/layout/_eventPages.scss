@@ -1,0 +1,10 @@
+.xl_img_content {
+  height: 204px;
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+  @include b768 {
+    height: 598px;
+  }
+}

@@ -1,0 +1,7 @@
+.page_xl_m {
+  margin:32px auto;
+
+  @include b768 {
+    margin: 60px auto;
+  }
+}

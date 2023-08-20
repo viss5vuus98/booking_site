@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/icofont/icofont.min.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <%- include('./layout/navbar.ejs'); -%>
+    <div class="container mt-4 mt-md-8">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="p-3 p-md-6 border border-3">
+            <img
+              class="img-fluid"
+              src="../assets/images/event/09.jpg"
+              alt="Picture"
+            />
+          </div>
+        </div>
+        <div class="col-md-2 d-flex flex-md-column">
+          <h3 class="fw-bold p-8 border border-3 fs-2 text-center mb-md-6">
+            2023
+          </h3>
+          <div
+            class="p-9 border border-3 flex-grow-1 d-flex flex-md-column justify-content-between"
+          >
+            <h3 class="fs-2 text-center">MAY<br />19</h3>
+            <p class="fs-1 text-center">/</p>
+            <div class="fs-3 text-center">
+              <p class="m-0">12:00</p>
+              <p class="m-0">|</p>
+              <p class="m-0">20:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-6 mb-6 mb-md-9">
+      <h2>返老還童 - 制服聯誼</h2>
+      <p>穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！</p>
+      <div class="d-none d-md-block">
+        <span
+          class="badge text-dark border border-start-4 py-1 px-6 fw-bold mt-2 me-1"
+          >聯誼</span
+        >
+        <span
+          class="badge text-dark border border-start-4 py-1 px-6 fw-bold mt-2 me-1 me-1"
+          >美食</span
+        >
+        <span
+          class="badge text-dark border border-start-4 py-1 px-6 fw-bold mt-2 me-1"
+          >戶外</span
+        >
+        <span
+          class="badge text-dark border border-start-4 py-1 px-6 fw-bold mt-2 me-1"
+          >交通旅遊</span
+        >
+      </div>
+    </div>
+    <div class="container mb-6 mb-md-9">
+      <div class="border border-3 p-4 p-md-8">
+        <p>想回到過去？試著讓故事繼續？</p>
+        <p>
+          由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！
+        </p>
+        <p>
+          活動中全程會有隨行攝影師，捕捉你們的純愛互動，拍攝成實境電視劇，讓你們能留下永恆的美好回憶
+        </p>
+      </div>
+    </div>
+
+    <div class="container mb-9 pb-md-3">
+      <div
+        class="col-12 mb-4 mb-md-0 px-8 py-6 border border-3 d-flex justify-content-between align-items-center"
+      >
+        <h2 class="heading_main m-0">TICKET</h2>
+        <h2 class="heading_sup m-0 fw-bold">購票資訊</h2>
+      </div>
+      <table class="table align-middle">
+        <thead class="border-bottom-3">
+          <tr>
+            <th scope="col">活動日期</th>
+            <th scope="col">票種</th>
+            <th scope="col">票價</th>
+            <th class="ps-5" scope="col">購票</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th width="30%" scope="row">2023/5/12</th>
+            <td width="29%">普通票</td>
+            <td width="30%"><p>$600</p></td>
+            <td class="text-end">
+              <a class="btn btn-outline-dark border-2 py-2 px-6" href=""
+                >立即購票</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th width="30%" scope="row">2023/5/12</th>
+            <td width="29%">改頭換面票（含大改造）</td>
+            <td width="30%"><p>$3600</p></td>
+            <td class="text-end">
+              <a class="btn btn-outline-dark border-2 py-2 px-6" href=""
+                >立即購票</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th width="30%" scope="row">2023/5/12</th>
+            <td width="29%">必勝票（含戀愛小抄）</td>
+            <td width="30%"><p>$8000</p></td>
+            <td class="text-end">
+              <a class="btn btn-outline-dark border-2 py-2 px-6" href=""
+                >立即購票</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- footer -->
+    <%- include('./layout/footer.ejs'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
