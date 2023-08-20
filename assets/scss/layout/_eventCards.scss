@@ -1,0 +1,11 @@
+.card_head_size {
+  font-size: 32px;
+
+  @include b768 {
+    font-size: 42px;
+  }
+  //平板斷點
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+  }
+}

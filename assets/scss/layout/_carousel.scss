@@ -1,0 +1,30 @@
+.carousel {
+  & .title {
+    width: 50%;
+    font-size: 32px;
+    padding: 16px 40px;
+    @include b768 {
+      width: 100%;
+      font-size: 60px;
+      padding: 48px;
+    }
+  }
+  & .sup_text_content {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    & p{
+      display: none;
+      @include b768 {
+          display: block;
+      }
+    }
+  }
+  & .sup_title {
+    font-size: 18px;
+    @include b768 {
+        font-size: 24px;
+      }
+  }
+}
+
