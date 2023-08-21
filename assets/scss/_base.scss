@@ -92,21 +92,15 @@ $abbrev in (gap: fg) {
   }
 }
 
-.swiper-wrapper {
-  transition-timing-function: linear;
+.submit_btn {
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 700;
 }
-
-.marquee_content {
-  margin: 60px 0;
-  & .swiper-slide {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 3.2px;
-    width: auto;
-    color: #fbff22;
-    background: #000;
-  }
+.cancel_btn {
+  background: #F3F1E5;
+  color: #4f4f4f;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 700;
 }
-

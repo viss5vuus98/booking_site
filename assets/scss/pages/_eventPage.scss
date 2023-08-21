@@ -1,0 +1,24 @@
+.time::before {
+  content: "";
+  height: 1px;
+  width: 30%;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: rotate(120deg);
+  @include b768 {
+    width: 70%;
+    left: 10%;
+  }
+}
+
+.event_date_size {
+  font-size: 48px;
+  @include b768 {
+    font-size: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+  }
+}

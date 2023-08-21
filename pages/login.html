@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/icofont/icofont.min.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <%- include('./layout/navbar.ejs'); -%>
+
+    <div class="container mt-6 mt-md-10 full_content">
+      <div class="row">
+        <div class="text-center mb-4">
+          <img
+            class="sparkler"
+            src="../assets/images/sparkler.png"
+            alt="Sparkler"
+          />
+          <h2 class="mt-2 fs-4">會員登入</h2>
+        </div>
+        <div class="col-md-4 mx-auto">
+          <form class="needs-validation validated" novalidate>
+            <div class="mb-4">
+              <label for="account" class="form-label">帳號</label>
+              <input
+                type="text"
+                class="form-control border-2 py-2 px-4 fs-4"
+                id="account2"
+                placeholder="請輸入帳號"
+                required
+              />
+              <div class="invalid-feedback">請輸入帳號!</div>
+            </div>
+            <div class="mb-4">
+              <label for="account" class="form-label">密碼</label>
+              <input
+                type="password"
+                class="form-control border-2 py-2 px-4 fs-4"
+                id="account2"
+                placeholder="請輸入密碼"
+                required
+              />
+              <div class="invalid-feedback">請輸入密碼!</div>
+            </div>
+            <button
+              class="btn btn-primary w-100 submit_btn mt-6 mt-md-8"
+              type="button"
+            >
+              <span>登入</span><i class="icofont-double-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <%- include('./layout/footer.ejs'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
