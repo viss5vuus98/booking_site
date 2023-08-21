@@ -12,8 +12,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/booking_site/assets/main-9344ec4f.js"></script>
-    <link rel="stylesheet" href="/booking_site/assets/main-46bd90d1.css">
+    <script type="module" crossorigin src="/booking_site/assets/main-61e267ac.js"></script>
+    <link rel="stylesheet" href="/booking_site/assets/main-55697f72.css">
   </head>
   <body>
     <!-- navbar -->
@@ -75,26 +75,238 @@
     <div class="container mt-6 mt-md-10">
       <div class="row">
         <div class="col-md-6 m-auto">
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="py-3 border border-1 text-center">
+          <ol
+            class="d-flex justify-content-between list-unstyled pay-list position-relative mt-6 mt-md-10"
+          >
+            <li class="d-flex flex-column align-items-center">
+              <p
+                class="border border-1 text-center d-flex justify-content-center align-items-center m-0 number mb-1 mb-md-2 bg-light"
+              >
                 1
               </p>
-              <p>訂單確認</p>
-            </div>
-            <div>
-              <p class="py-1 py-md-3 border border-1 text-center">
+              <p class="fw-bold mb-0">訂單確認</p>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <p
+                class="border border-1 text-center d-flex justify-content-center align-items-center m-0 number mb-1 mb-md-2 bg-light"
+              >
                 2
               </p>
-              <p>訂單確認</p>
-            </div>
-            <div>
-              <p class="py-1 py-md-3 border border-1 text-center">
+              <p class="fw-bold mb-0">結帳付款</p>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <p
+                class="border border-1 text-center d-flex justify-content-center align-items-center number mb-1 mb-md-2 bg-light"
+              >
                 3
               </p>
-              <p>訂單確認</p>
-            </div>
+              <p class="fw-bold mb-0">訂購結果</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container mb-9">
+      <div class="row">
+        <h2 class="fs-2 fw-bold title-ls text-center">返老還童-制服聯誼</h2>
+        <div class="col-md-6 mx-auto">
+          <table class="table align-middle">
+            <thead class="border-bottom-3">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="50%" scope="row">日期</th>
+                <td class="text-end" width="50%">2023/5/12</td>
+              </tr>
+              <tr>
+                <th scope="row">票種</th>
+                <td class="text-end">改頭換面票（含大改造</td>
+              </tr>
+              <tr>
+                <th scope="row">票價</th>
+                <td class="text-end">$8000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="text-center mb-4">
+          <img
+            class="sparkler"
+            src="../assets/images/sparkler.png"
+            alt="Sparkler"
+          />
+        </div>
+
+        <form class="col-md-6 mx-auto needs-validation validated" novalidate>
+          <h3 class="text-center fs-4 fw-bold">聯絡人資料</h3>
+          <div class="mb-4">
+            <label for="account" class="form-label">聯絡人姓名</label>
+            <input
+              type="text"
+              class="form-control border-2 py-2 px-4 fs-4"
+              id="account2"
+              placeholder="請輸入聯絡人名稱"
+              required
+            />
+            <div class="invalid-feedback">請輸入帳號!</div>
           </div>
+          <div class="mb-4">
+            <label for="account" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control border-2 py-2 px-4 fs-4"
+              id="account2"
+              placeholder="請輸入Email"
+              required
+            />
+            <div class="invalid-feedback">請輸入帳號!</div>
+          </div>
+          <div class="mb-4">
+            <label for="account" class="form-label">手機</label>
+            <input
+              type="number"
+              class="form-control border-2 py-2 px-4 fs-4"
+              id="account2"
+              placeholder="請輸入手機號碼"
+              required
+            />
+            <div class="invalid-feedback">請輸入帳號!</div>
+          </div>
+          <div class="w-75 mx-auto mt-6 mt-md-8">
+            <button class="btn btn-primary w-100 submit_btn mb-2" type="submit">
+              <span>確認表單資料</span><i class="icofont-double-right"></i>
+            </button>
+            <button class="btn border-0 w-100 cancel_btn" type="button">
+              <span>取消購票</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div> -->
+
+    <!-- <div class="container mb-9 mb-md-10">
+      <div class="row">
+        <h2 class="fs-2 fw-bold title-ls text-center mb-4">
+          返老還童-制服聯誼
+        </h2>
+        <h3
+          class="py-2 px-x px-md-3 bg-dark text-warning text-center col-md-7 mx-auto fs-6 mb-6 mb-md-8"
+        >
+          您的訂單已保留，請在2023/5/30 04:32
+          前完成繳費。若逾期未繳款，系統將取消您的訂單。
+        </h3>
+        <div class="col-md-6 mx-auto">
+          <table class="table align-middle">
+            <thead class="border-bottom-3">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="50%" scope="row">訂單編號</th>
+                <td class="text-end" width="50%">892746123</td>
+              </tr>
+              <tr>
+                <th scope="row">票券</th>
+                <td class="text-end">改頭換面票（含大改造）$8000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-center mb-4">
+          <img
+            class="sparkler"
+            src="../assets/images/sparkler.png"
+            alt="Sparkler"
+          />
+        </div>
+        <form class="col-md-6 mx-auto needs-validation validated" novalidate>
+          <h3 class="text-center fs-4 fw-bold">結帳資訊</h3>
+          <div class="mb-4">
+            <label for="account" class="form-label">取票資訊</label>
+            <input
+              type="text"
+              class="form-control border-2 py-2 px-4 fs-4"
+              id="account2"
+              placeholder="請輸入身分證字號或護照號碼"
+              required
+            />
+            <div class="invalid-feedback">請輸入身分證字號或護照號碼!</div>
+          </div>
+          <div class="mb-4">
+            <span>請輸入您的 </span>
+            <span class="text-danger">身分證字號</span>
+            <span> 供取票使用，外籍人士請輸入 </span>
+            <span class="text-danger">護照號碼</span>
+          </div>
+          <p class="mb-2">付款方式</p>
+          <div>
+            <input class="me-2" type="radio" /><label for="">信用卡</label>
+          </div>
+          <div>
+            <input class="me-2" type="radio" /><label for="">ATM虛擬帳戶</label>
+          </div>
+          <div class="w-75 mx-auto mt-6 mt-md-8">
+            <button class="btn btn-primary w-100 submit_btn mb-2" type="submit">
+              <span>確認訂單並繳費 $8000</span
+              ><i class="icofont-double-right"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div> -->
+
+    <div class="container mb-9 mb-md-10">
+      <div class="row">
+        <div class="text-center mb-8">
+          <i class="icofont-check-circled check_icon icofont-3x"></i>
+          <h2 class="fs-3 mt-1">訂購成功</h2>
+        </div>
+        <div class="col-md-6 mx-auto">
+          <table class="table align-middle">
+            <thead class="border-bottom-3">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th width="50%" scope="row">訂單編號</th>
+                <td class="text-end" width="50%">892746123</td>
+              </tr>
+              <tr>
+                <th scope="row">訂購時間</th>
+                <td class="text-end">2023/04/28 14:30</td>
+              </tr>
+              <tr>
+                <th scope="row">票券</th>
+                <td class="text-end">改頭換面票（含大改造）$8000</td>
+              </tr>
+              <tr>
+                <th scope="row">取票序號</th>
+                <td class="text-end text-danger">95G54J4434</td>
+              </tr>
+              <tr>
+                <th scope="row">取票號碼</th>
+                <td class="text-end text-danger">04597101</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="text-dark">
+            請至 7-Eleven 完成取票，請於 ibon
+            點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。
+            若您未前往取票，本筆交易仍視為完成，不可取消訂單。
+            若需退票，請按照退票辦法進行申請。
+          </p>
         </div>
       </div>
     </div>
