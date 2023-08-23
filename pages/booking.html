@@ -17,34 +17,44 @@
     <!-- navbar -->
     <%- include('./layout/navbar.ejs'); -%>
     <!-- step control -->
-    <div class="container mt-6 mt-md-10">
+    <div class="container mt-6 mt-md-10 mb-6 mb-md-9">
       <div class="row">
         <div class="col-md-6 m-auto">
           <ol
-            class="d-flex justify-content-between list-unstyled pay-list position-relative mt-6 mt-md-10"
+            id="steps"
+            class="d-flex justify-content-between list-unstyled pay-list position-relative"
           >
-            <li class="d-flex flex-column align-items-center">
+            <li class="d-flex flex-column align-items-cente step active">
               <p
-                class="border border-1 text-center d-flex justify-content-center align-items-center m-0 number mb-1 mb-md-2 bg-light"
+                class="border border-1 text-center d-flex justify-content-center align-items-center m-0 number mb-1 mb-md-2 step_number"
               >
                 1
               </p>
+              <i
+                class="icofont-verification-check border border-1 text-center d-flex justify-content-center align-items-center m-0 number mb-1 mb-md-2 step_checked"
+              ></i>
               <p class="fw-bold mb-0">訂單確認</p>
             </li>
-            <li class="d-flex flex-column align-items-center">
+            <li class="d-flex flex-column align-items-center step">
               <p
-                class="border border-1 text-center d-flex justify-content-center align-items-center m-0 number mb-1 mb-md-2 bg-light"
+                class="border border-1 text-center d-flex justify-content-center align-items-center m-0 number mb-1 mb-md-2 step_number"
               >
                 2
               </p>
+              <i
+                class="icofont-verification-check border border-1 text-center d-flex justify-content-center align-items-center m-0 number mb-1 mb-md-2 step_checked"
+              ></i>
               <p class="fw-bold mb-0">結帳付款</p>
             </li>
-            <li class="d-flex flex-column align-items-center">
+            <li class="d-flex flex-column align-items-center step">
               <p
-                class="border border-1 text-center d-flex justify-content-center align-items-center number mb-1 mb-md-2 bg-light"
+                class="border border-1 text-center d-flex justify-content-center align-items-center m-0 number mb-1 mb-md-2 step_number"
               >
                 3
               </p>
+              <i
+                class="icofont-verification-check border border-1 text-center d-flex justify-content-center align-items-center m-0 number mb-1 mb-md-2 step_checked"
+              ></i>
               <p class="fw-bold mb-0">訂購結果</p>
             </li>
           </ol>
@@ -52,7 +62,8 @@
       </div>
     </div>
 
-    <!-- <div class="container mb-9">
+    <!-- page 1 -->
+    <div class="container mb-9 d-block">
       <div class="row">
         <h2 class="fs-2 fw-bold title-ls text-center">返老還童-制服聯誼</h2>
         <div class="col-md-6 mx-auto">
@@ -88,60 +99,69 @@
           />
         </div>
 
-        <form class="col-md-6 mx-auto needs-validation validated" novalidate>
+        <form
+          id="page1"
+          class="col-md-6 mx-auto needs-validation"
+          novalidate
+        >
           <h3 class="text-center fs-4 fw-bold">聯絡人資料</h3>
           <div class="mb-4">
             <label for="account" class="form-label">聯絡人姓名</label>
             <input
+              name="name"            
               type="text"
               class="form-control border-2 py-2 px-4 fs-4"
               id="account2"
               placeholder="請輸入聯絡人名稱"
               required
             />
-            <div class="invalid-feedback">請輸入帳號!</div>
+            <div class="invalid-feedback">請輸入聯絡人名稱!</div>
           </div>
           <div class="mb-4">
             <label for="account" class="form-label">Email</label>
             <input
+              name="email"            
               type="email"
               class="form-control border-2 py-2 px-4 fs-4"
               id="account2"
               placeholder="請輸入Email"
               required
             />
-            <div class="invalid-feedback">請輸入帳號!</div>
+            <div class="invalid-feedback">請輸入Email!</div>
           </div>
           <div class="mb-4">
             <label for="account" class="form-label">手機</label>
             <input
+              name="phone"
               type="number"
               class="form-control border-2 py-2 px-4 fs-4"
               id="account2"
               placeholder="請輸入手機號碼"
               required
             />
-            <div class="invalid-feedback">請輸入帳號!</div>
+            <div class="invalid-feedback">請輸入手機號碼!</div>
           </div>
           <div class="w-75 mx-auto mt-6 mt-md-8">
             <button class="btn btn-primary w-100 submit_btn mb-2" type="submit">
               <span>確認表單資料</span><i class="icofont-double-right"></i>
             </button>
-            <button class="btn border-0 w-100 cancel_btn" type="button">
+            <a class="btn border-0 w-100 cancel_btn" href="./index.html">
               <span>取消購票</span>
-            </button>
+            </a>
           </div>
         </form>
       </div>
-    </div> -->
+    </div>
+    <!-- page 1 end -->
 
-    <!-- <div class="container mb-9 mb-md-10">
+    <!-- page 2 -->
+    <div class="container mb-9 mb-md-10 d-none">
       <div class="row">
         <h2 class="fs-2 fw-bold title-ls text-center mb-4">
           返老還童-制服聯誼
         </h2>
         <h3
-          class="py-2 px-x px-md-3 bg-dark text-warning text-center col-md-7 mx-auto fs-6 mb-6 mb-md-8"
+          class="py-2 px-2 px-md-3 bg-dark text-warning text-center col-md-7 mx-auto fs-6 mb-6 mb-md-8"
         >
           您的訂單已保留，請在2023/5/30 04:32
           前完成繳費。若逾期未繳款，系統將取消您的訂單。
@@ -173,7 +193,11 @@
             alt="Sparkler"
           />
         </div>
-        <form class="col-md-6 mx-auto needs-validation validated" novalidate>
+        <form
+          id="page2"
+          class="col-md-6 mx-auto needs-validation"
+          novalidate
+        >
           <h3 class="text-center fs-4 fw-bold">結帳資訊</h3>
           <div class="mb-4">
             <label for="account" class="form-label">取票資訊</label>
@@ -207,9 +231,11 @@
           </div>
         </form>
       </div>
-    </div> -->
+    </div>
+    <!-- page 2 end -->
 
-    <div class="container mb-9 mb-md-10">
+    <!-- page 3 -->
+    <div id="page3" class="container mb-9 mb-md-10 d-none">
       <div class="row">
         <div class="text-center mb-8">
           <i class="icofont-check-circled check_icon icofont-3x"></i>
@@ -255,8 +281,10 @@
         </div>
       </div>
     </div>
+    <!-- page 3 end -->
     <!-- footer -->
     <%- include('./layout/footer.ejs'); -%>
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../src/booking.js"></script>
   </body>
 </html>

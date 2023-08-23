@@ -28,13 +28,14 @@
           <h2 class="mt-2 fs-4">會員登入</h2>
         </div>
         <div class="col-md-4 mx-auto">
-          <form class="needs-validation validated" novalidate>
+          <form id="login" class="needs-validation" novalidate>
             <div class="mb-4">
               <label for="account" class="form-label">帳號</label>
               <input
+                name="account"
                 type="text"
                 class="form-control border-2 py-2 px-4 fs-4"
-                id="account2"
+                id="account"
                 placeholder="請輸入帳號"
                 required
               />
@@ -43,17 +44,19 @@
             <div class="mb-4">
               <label for="account" class="form-label">密碼</label>
               <input
+                name="password"
                 type="password"
                 class="form-control border-2 py-2 px-4 fs-4"
-                id="account2"
+                id="password"
                 placeholder="請輸入密碼"
+                autocomplete=""
                 required
               />
               <div class="invalid-feedback">請輸入密碼!</div>
             </div>
             <button
               class="btn btn-primary w-100 submit_btn mt-6 mt-md-8"
-              type="button"
+              type="submit"
             >
               <span>登入</span><i class="icofont-double-right"></i>
             </button>
@@ -65,5 +68,6 @@
     <!-- footer -->
     <%- include('./layout/footer.ejs'); -%>
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../src/login.js"></script>
   </body>
 </html>

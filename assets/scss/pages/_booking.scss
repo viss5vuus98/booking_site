@@ -24,3 +24,27 @@
   width: 32px;
   height: 32px;
 }
+
+
+.step {
+  .step_number {
+    background-color: $light;
+  }
+  .step_checked {
+    display: none !important;
+  }
+  &.active .step_number {
+    background-color: $dark;
+    color: $warning;
+    display: flex !important;;
+  }
+  &.done .step_checked {
+    background-color: $dark;
+    color: $warning;
+    display: flex !important;;
+  }
+  &.done .step_number {
+    display: none !important;
+    ;
+  }
+}

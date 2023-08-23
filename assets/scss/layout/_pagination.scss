@@ -5,3 +5,9 @@
     margin: 60px auto;
   }
 }
+
+.pagination .page-item a:hover {
+  background-color: $dark !important;
+  color: $warning !important;
+  border: 0 !important;
+}
