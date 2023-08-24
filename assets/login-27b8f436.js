@@ -1,1 +1,0 @@
-import"./main-89e82243.js";const e=document.querySelector("#login"),a=document.querySelector("#account"),o=document.querySelector("#password");e.addEventListener("submit",t=>{if(t.preventDefault(),a.value.length<=0||o.value.length<=0){t.target.classList.add("was-validated");return}t.target.classList.remove("was-validated")});
