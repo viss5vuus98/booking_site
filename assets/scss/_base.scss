@@ -2,12 +2,15 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: $warning !important;
-}
+// a:hover {
+//   color: $warning;
+// }
 
 a.badge:hover {
-  background-color: #000;
-  color: $warning !important;
   border-left-color: $warning !important;
-}
+    background: #000;
+    color: $white !important;
+    a {
+      color: $white !important;
+    }
+  }

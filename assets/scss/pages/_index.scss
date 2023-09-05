@@ -43,3 +43,9 @@
 .rotate-s-2 {
   transform: rotate(-2deg);
 }
+
+.border-s-md-0 {
+  @include b768 {
+    border-left: 0 !important;
+  }
+}

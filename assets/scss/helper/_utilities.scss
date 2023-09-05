@@ -8,8 +8,17 @@ $utilities: (
       3: 3px solid var(--#{$prefix}border-color),
       4: 4px solid var(--#{$prefix}border-color),
     )),
-  "border-bottom": (property: border-bottom,
-    class: border-bottom,
+"border-bottom": (property: border-bottom,
+  class: border-bottom,
+  values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+    0: 0,
+    1: 1px solid var(--#{$prefix}border-color),
+    2: 2px solid var(--#{$prefix}border-color),
+    3: 3px solid var(--#{$prefix}border-color),
+    4: 4px solid var(--#{$prefix}border-color),
+  )),
+  "border-top": (property: border-top,
+    class: border-top,
     values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
       0: 0,
       1: 1px solid var(--#{$prefix}border-color),
@@ -17,15 +26,6 @@ $utilities: (
       3: 3px solid var(--#{$prefix}border-color),
       4: 4px solid var(--#{$prefix}border-color),
     )),
-    "border-top": (property: border-top,
-      class: border-top,
-      values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
-        1: 1px solid var(--#{$prefix}border-color),
-        2: 2px solid var(--#{$prefix}border-color),
-        3: 3px solid var(--#{$prefix}border-color),
-        4: 4px solid var(--#{$prefix}border-color),
-      )),
   "gap": (responsive: true,
     property: gap,
     class: gap,
@@ -156,4 +156,41 @@ $abbrev in (gap: fg) {
   padding: 8px 16px;
   font-size: 20px;
   font-weight: 700;
+}
+
+.w-51 {
+  width: 51px;
+}
+
+.h-51 {
+  height: 51px;
+}
+
+.hover_link_effect_1:hover {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 29px;
+    height: 29px;
+    background: #FBFF22;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+.hover_link_effect_2:hover {
+  text-decoration: underline;
+}
+
+.hover_link_effect_3:hover {
+  border-left-color: $warning !important;
+  background: #000;
+  a {
+    color: $white;
+  }
 }
